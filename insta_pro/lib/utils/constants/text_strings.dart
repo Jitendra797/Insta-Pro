@@ -43,9 +43,8 @@ class KTexts {
   static const String done = "Done";
 
   //Authentication Heading Text
-  static String loginTitle = "Welcome back,";
-  static String loginSubTitle =
-      "Discover Limitless Choices and Unmatched Convenience.";
+  static String loginTitle = "Welcome back";
+  static String loginSubTitle = "write blogs and post them in this Instapro";
   static String signUpTitle = "Let's create your account";
   static String forgetPasswordTitle = "Forget password";
   static String forgetPasswordSubTitle =

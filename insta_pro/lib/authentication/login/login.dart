@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:insta_pro/authentication/login/widgets/login_form.dart';
 import 'package:insta_pro/authentication/login/widgets/login_header.dart';
 import 'package:insta_pro/common/styles/spacing_styles.dart';
 
@@ -12,7 +13,7 @@ class LoginScreen extends StatelessWidget {
         child: Padding(
           padding: KSpacingStyle.paddingWithAppBarHeight,
           child: Column(
-            children: [LoginHeader()],
+            children: [LoginHeader(), LoginForm()],
           ),
         ),
       ),

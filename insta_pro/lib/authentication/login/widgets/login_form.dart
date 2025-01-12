@@ -39,11 +39,31 @@ class LoginForm extends StatelessWidget {
                     const Text(KTexts.rememberMe),
                   ],
                 ),
-                // Forget Password
+                TextButton(
+                  onPressed: () => {},
+                  child: const Text(KTexts.forgetPassword),
+                ),
               ],
             ),
             const SizedBox(
               height: KSizes.spaceBtwSections,
+            ),
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                onPressed: () => {},
+                child: const Text(KTexts.signIn),
+              ),
+            ),
+            const SizedBox(
+              height: KSizes.spaceBtwItems,
+            ),
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                onPressed: () => {},
+                child: const Text(KTexts.createAccount),
+              ),
             ),
           ],
         ),

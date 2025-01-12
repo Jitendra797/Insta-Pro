@@ -1,12 +1,12 @@
 class KTexts {
   static const String submit = "Submit";
-  static const String appName = "K-Store";
+  static const String appName = "InstaPro";
   static const String kContinue = "Continue";
 
   // Onboarding Texts
-  static const String onBoardingTitle1 = "Choose your product";
-  static const String onBoardingTitle2 = "Select Payment Method";
-  static const String onBoardingTitle3 = "Deliver at your door step";
+  static const String onBoardingTitle1 = "Crete a Blog";
+  static const String onBoardingTitle2 = "Post the Blog";
+  static const String onBoardingTitle3 = "";
 
   static const String onBoardingSubTitle1 =
       "Welcome to a World of Limitless Choices - Your Perfect Product Awaits!";

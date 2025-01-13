@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:insta_pro/home/home.dart';
 import 'package:insta_pro/utils/constants/sizes.dart';
 import 'package:insta_pro/utils/constants/text_strings.dart';
 import 'package:insta_pro/authentication/signup/signup.dart';
@@ -53,7 +54,7 @@ class LoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () => {},
+                onPressed: () => Get.to(() => const HomePage()),
                 child: const Text(KTexts.signIn),
               ),
             ),

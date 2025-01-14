@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:insta_pro/authentication/login/login.dart';
 import 'package:insta_pro/common/widgets/appbar/appbar.dart';
 import 'package:insta_pro/home/controllers/menucontroller.dart';
 import 'package:insta_pro/home/models/popupitems.dart';
 import 'package:insta_pro/home/widgets/menupopup.dart';
+import 'package:insta_pro/profile/profile.dart';
 import 'package:insta_pro/utils/constants/text_strings.dart';
 
 class HomePage extends StatelessWidget {
@@ -13,8 +15,10 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     final menuController = MenuControlle(
       onProfilePressed: () {
+        Get.to(() => const ProfileScreen());
       },
       onLogoutPressed: () {
+        Get.to(() => const LoginScreen());
       },
     );
     return Scaffold(

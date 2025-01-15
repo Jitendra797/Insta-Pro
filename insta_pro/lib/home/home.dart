@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:insta_pro/authentication/login/login.dart';
+import 'package:insta_pro/blogcard/blogcard.dart';
 import 'package:insta_pro/common/widgets/appbar/appbar.dart';
 import 'package:insta_pro/home/controllers/menucontroller.dart';
 import 'package:insta_pro/home/models/popupitems.dart';
@@ -34,7 +35,12 @@ class HomePage extends StatelessWidget {
               items: menuItems,
             ),
           ]),
-      body: const SingleChildScrollView(),
+      body: const SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [BlogCard()],
+        ),
+      ),
     );
   }
 }

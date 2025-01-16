@@ -26,9 +26,9 @@ class BlogCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       elevation: 2,
-      margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 16),
+      margin: EdgeInsets.symmetric(vertical: 10, horizontal: 16),
       child: Padding(
-        padding: const EdgeInsets.all(16),
+        padding: EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -38,56 +38,60 @@ class BlogCard extends StatelessWidget {
                   backgroundImage: NetworkImage(profileImageUrl),
                   radius: 20,
                 ),
-                const SizedBox(width: 8),
-                Text(
-                  authorName,
-                  style: const TextStyle(fontWeight: FontWeight.bold),
+                SizedBox(width: 8),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      authorName,
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    Text(
+                      updatedTime,
+                      style: TextStyle(color: Colors.grey, fontSize: 12),
+                    ),
+                  ],
                 ),
               ],
             ),
-            const SizedBox(height: 8),
+            SizedBox(height: 8),
             Text(
               title,
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            const SizedBox(height: 8),
+            SizedBox(height: 8),
             Text(
               description,
               maxLines: 3,
               overflow: TextOverflow.ellipsis,
             ),
-            const SizedBox(height: 8),
+            SizedBox(height: 8),
             Wrap(
               spacing: 8,
               children: tags.map((tag) => Chip(label: Text(tag))).toList(),
             ),
-            const SizedBox(height: 8),
+            SizedBox(height: 8),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Row(
                   children: [
-                    const Icon(Icons.thumb_up),
-                    const SizedBox(width: 4),
+                    Icon(Icons.thumb_up),
+                    SizedBox(width: 4),
                     Text('$likesCount'),
                   ],
                 ),
                 Row(
                   children: [
-                    const Icon(Icons.comment),
-                    const SizedBox(width: 4),
+                    Icon(Icons.comment),
+                    SizedBox(width: 4),
                     Text('$commentsCount'),
                   ],
                 ),
               ],
-            ),
-            const SizedBox(height: 8),
-            Text(
-              'Updated: $updatedTime',
-              style: const TextStyle(color: Colors.grey),
             ),
           ],
         ),

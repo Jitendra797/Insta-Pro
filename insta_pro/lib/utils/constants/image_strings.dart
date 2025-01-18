@@ -6,4 +6,6 @@ class KImages {
   //Login logo
   static const String facebookLogo = "assets/Icons/facebook.png";
   static const String googleLogo = "assets/Icons/google.png";
+
+  static const String user = "assets/Images/user.png";
 }

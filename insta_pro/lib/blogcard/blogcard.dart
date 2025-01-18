@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
 
 class BlogCard extends StatelessWidget {
   final String title;
@@ -79,14 +80,14 @@ class BlogCard extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    const Icon(Icons.thumb_up),
+                    const Icon(Icons.favorite_sharp),
                     const SizedBox(width: 4),
                     Text('$likesCount'),
                   ],
                 ),
                 Row(
                   children: [
-                    const Icon(Icons.comment),
+                    const Icon(Iconsax.message),
                     const SizedBox(width: 4),
                     Text('$commentsCount'),
                   ],

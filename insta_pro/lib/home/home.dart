@@ -47,6 +47,11 @@ class HomePage extends StatelessWidget {
               text: 'Search in Store',
               icon: Iconsax.search_normal,
             ),
+            BlogCard(),
+            BlogCard(),
+            BlogCard(),
+            BlogCard(),
+            BlogCard(),
             BlogCard()
           ],
         ),

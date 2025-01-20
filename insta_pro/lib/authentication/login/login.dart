@@ -9,10 +9,11 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: KSpacingStyle.paddingWithAppBarHeight,
+      body: Padding(
+        padding: KSpacingStyle.paddingWithAppBarHeight,
+        child: Center(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [LoginHeader(), LoginForm()],
           ),
         ),

@@ -14,7 +14,7 @@ class SearchContainer extends StatelessWidget {
       this.showBorder = true,
       this.onTap,
       this.padding =
-          const EdgeInsets.symmetric(horizontal: KSizes.defaultSpace)});
+          const EdgeInsets.symmetric(horizontal: KSizes.spaceBtwItems)});
 
   final String text;
   final IconData? icon;
@@ -31,14 +31,14 @@ class SearchContainer extends StatelessWidget {
         padding: padding,
         child: Container(
           width: KDeviceUtils.getScreenWidth(),
-          padding: const EdgeInsets.all(KSizes.md),
+          padding: const EdgeInsets.all(KSizes.smaller),
           decoration: BoxDecoration(
             color: showBackground
                 ? dark
                     ? KColors.dark
                     : KColors.light
                 : Colors.transparent,
-            borderRadius: BorderRadius.circular(KSizes.cardRadiusLg),
+            borderRadius: BorderRadius.circular(KSizes.cardRadiusMd),
             border: showBorder ? Border.all(color: KColors.grey) : null,
           ),
           child: Row(

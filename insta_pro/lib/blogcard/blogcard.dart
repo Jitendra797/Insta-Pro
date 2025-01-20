@@ -74,12 +74,7 @@ class BlogCard extends StatelessWidget {
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
             ),
-            const SizedBox(height: KSizes.spaceBtwItems),
-            Wrap(
-              spacing: 8,
-              children: tags.map((tag) => Chip(label: Text(tag))).toList(),
-            ),
-            const SizedBox(height: KSizes.spaceBtwItems),
+            const SizedBox(height: KSizes.spaceBtwSections),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [

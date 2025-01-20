@@ -81,8 +81,7 @@ class BlogCard extends StatelessWidget {
                 Row(
                   children: [
                     const Icon(
-                      Icons.favorite_sharp,
-                      color: Colors.red,
+                      Iconsax.heart,
                     ),
                     const SizedBox(width: KSizes.xs),
                     Text('$likesCount'),

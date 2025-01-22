@@ -38,13 +38,18 @@ class HomePage extends StatelessWidget {
               items: menuItems,
             ),
           ]),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => {},
+        tooltip: 'Create Blog',
+        child: const Icon(Icons.add),
+      ),
       body: const SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             SizedBox(height: KSizes.spaceBtwItems),
             SearchContainer(
-              text: 'Search in Store',
+              text: 'Search blogs',
               icon: Iconsax.search_normal,
             ),
             BlogCard(),

@@ -16,7 +16,13 @@ class Deletedblogs extends StatelessWidget {
           BlogCard(),
           BlogCard(),
           BlogCard(),
-          BlogCard()
+          BlogCard(),
+          BlogCard(),
+          BlogCard(),
+          BlogCard(),
+          BlogCard(),
+          BlogCard(),
+          BlogCard(),
         ],
       )),
     );
